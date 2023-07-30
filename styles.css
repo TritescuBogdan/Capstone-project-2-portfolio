@@ -1,0 +1,99 @@
+body {
+  background: rgb(5, 138, 250);
+  background: linear-gradient(
+    90deg,
+    rgba(5, 138, 250, 1) 0%,
+    rgba(0, 212, 255, 1) 51%,
+    rgba(5, 138, 250, 1) 100%
+  );
+}
+
+#hero {
+  background: repeating-linear-gradient(
+    -99deg,
+    #2c6eff,
+    #63e7ff,
+    #058afa,
+    #23d5ab
+  );
+  background-size: 200% 200%;
+  animation: gradient 12s ease-out infinite;
+  height: 99vh;
+  display: flex;
+  align-items: center;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#navigation {
+  height: 0;
+}
+
+#center-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 800px) {
+  #center-title {
+    margin-top: 10%;
+  }
+  #hero {
+    height: 100vh;
+  }
+}
+
+h1,
+h2,
+.nav-link {
+  font-family: "Encode Sans Semi Expanded", sans-serif;
+  color: white !important;
+}
+p.lead.mb-4 {
+  font-family: "Encode Sans Semi Expanded", sans-serif;
+}
+h2 {
+  padding: 20px;
+}
+
+.border-purple {
+  border: 1px solid #712cf9;
+}
+.text-bg-purple {
+  background-color: #712cf9;
+}
+ul {
+  font-family: "Encode Sans Semi Expanded", sans-serif;
+}
+div.card-body > ul > li {
+  padding: 10px;
+  font-size: larger;
+}
+.card {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 16px 24px !important;
+  padding: 10px;
+}
+.card img {
+  align-items: center;
+}
+#projects img {
+  object-fit: fill;
+  border-radius: 8px;
+}
+@media (min-width: 1000px) {
+  #projects img {
+    height: 169px;
+  }
+}
